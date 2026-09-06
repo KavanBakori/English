@@ -1,0 +1,21 @@
+{
+  "name": "English 100-Day Mastery",
+  "short_name": "English App",
+  "description": "Learn English over a structured 100-day course tailored for Gujarati speakers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EFF6FF",
+  "theme_color": "#2563EB",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
