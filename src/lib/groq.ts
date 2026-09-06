@@ -13,14 +13,14 @@ const GROQ_MODELS = [
   "groq/compound-mini"
 ];
 
-async function createChatCompletionWithFallback(params: Omit<Groq.Chat.Completions.ChatCompletionCreateParams, "model">) {
+async function createChatCompletionWithFallback(params: any) {
   let lastError: unknown = null;
   for (const model of GROQ_MODELS) {
     try {
       const completion = await groq.chat.completions.create({
         ...params,
         model,
-      });
+      } as any);
       return completion;
     } catch (err: unknown) {
       console.warn(`Groq model ${model} failed, trying next fallback...`);
