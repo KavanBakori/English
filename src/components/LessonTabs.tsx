@@ -120,9 +120,9 @@ export default function LessonTabs({ lesson, userId }: LessonTabsProps) {
 function PhraseCard({ item }: { item: any }) {
   return (
     <div className="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-      <div className="flex justify-between items-start mb-2">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-3">
         <h3 className="text-xl font-bold text-blue-600">{item.phrase}</h3>
-        <span className="bg-emerald-50 text-emerald-700 text-xs px-2 py-1 rounded-full font-medium border border-emerald-200">
+        <span className="bg-emerald-50 text-emerald-700 text-xs px-3 py-1.5 rounded-full font-semibold border border-emerald-200 self-start sm:self-auto text-left break-words max-w-full">
           {item.meaning}
         </span>
       </div>
